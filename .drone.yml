@@ -4,7 +4,7 @@ name: default
 
 steps:
 - name: test
-  image: golang:1.13
+  image: harbor.pivotstudio.cn/pivot-studio/hustcatsbackend@sha256:28cc76df2b94ff6fbd5da3fbc0bdb72580e302602917c2bb13580fb0aaf3b67c
   commands:
   - go build
   - go test -v
