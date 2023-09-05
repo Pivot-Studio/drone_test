@@ -1,9 +1,14 @@
 kind: pipeline
-type: kubernetes
-name: default
+type: docker
+name: greeting
 
 steps:
-  - name: Hello World
-    image: harbor-registry.harbor.svc.cluster.local/centos
-    commands:
-      - echo Hello World
+- name: en
+  image: alpine
+  commands:
+  - echo hello world
+
+- name: fr
+  image: alpine
+  commands:
+  - echo bonjour monde
